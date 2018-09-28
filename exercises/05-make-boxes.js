@@ -7,7 +7,19 @@
 // *****
 // *****
 // *****
+//
 
+function makeSquare(squareSize){
+    var mySquare = ''
+    for (var j = 0; j < squareSize; j++){
+        var myLines = ''
+        for(var i = 0; i < squareSize; i++){
+            myLines = myLines + '*'
+        }
+        mySquare = mySquare + myLines + '\n'
+    } 
+    return mySquare = mySquare.substring(0, mySquare.length - 1)
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -19,7 +31,21 @@
 // *    *
 // *    *
 // ******
+//
 
+function makeBox(width, height){
+    var firstLine = ''
+        for(var i = 0; i < width; i++){
+            firstLine = firstLine + '*'
+        }
+        return firstLine
+    
+    
+
+
+}
+
+console.log(makeBox(4,6))
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
