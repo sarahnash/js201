@@ -6,7 +6,7 @@
 // numberJoinerWhile(12, 14) --> '12_13_14'
 
 function numberJoinerWhile (startNum,endNum){
-    var mystring = ('')
+    var mystring = ''
     while (startNum <= endNum){
         mystring = mystring + startNum + '_'
         startNum = startNum + 1
@@ -20,7 +20,7 @@ function numberJoinerWhile (startNum,endNum){
 // except using a "for" loop internally.
 
 function numberJoinerFor (startNum,endNum){
-    var mystring = ('')
+    var mystring = ''
     for (var i = startNum; i <= endNum; i++){
         mystring = mystring + i + '_'
     }
@@ -39,7 +39,7 @@ function numberJoinerFor (startNum,endNum){
 // numberJoinerFancy(3, 6, '***BANANAS***') --> 1***BANANAS***2***BANANAS***3
 
 function numberJoinerFancy (startNum,endNum,separator){
-    var mystring = ('')
+    var mystring = ''
     if (separator === undefined){
         separator = '_'
     }
